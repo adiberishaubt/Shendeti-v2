@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shendeti.Domain", "Shendeti.Domain\Shendeti.Domain.csproj", "{89AFD50E-4EA7-4776-98B9-267E1462829A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shendeti.Api", "Shendeti.Api\Shendeti.Api.csproj", "{852F3EA4-5954-412E-B4E3-CFA9C82C5177}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shendeti.Infrastructure", "Shendeti.Infrastructure\Shendeti.Infrastructure.csproj", "{809A75C0-81B1-4658-BFAD-EE515A15ABD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89AFD50E-4EA7-4776-98B9-267E1462829A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AFD50E-4EA7-4776-98B9-267E1462829A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AFD50E-4EA7-4776-98B9-267E1462829A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AFD50E-4EA7-4776-98B9-267E1462829A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{852F3EA4-5954-412E-B4E3-CFA9C82C5177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{852F3EA4-5954-412E-B4E3-CFA9C82C5177}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{852F3EA4-5954-412E-B4E3-CFA9C82C5177}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{852F3EA4-5954-412E-B4E3-CFA9C82C5177}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809A75C0-81B1-4658-BFAD-EE515A15ABD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809A75C0-81B1-4658-BFAD-EE515A15ABD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809A75C0-81B1-4658-BFAD-EE515A15ABD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809A75C0-81B1-4658-BFAD-EE515A15ABD3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
