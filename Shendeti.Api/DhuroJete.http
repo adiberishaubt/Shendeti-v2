@@ -1,0 +1,6 @@
+@DhuroJete_HostAddress = http://localhost:5095
+
+GET {{DhuroJete_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
