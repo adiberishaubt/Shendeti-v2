@@ -1,0 +1,10 @@
+[33m5721879[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m feat: Add HTTP test files for API testing and development
+[33m7922bb5[m feat: Add frontend advanced components and CRUD forms - Ready for collaborator enhancement
+[33mdd18e81[m feat: Implement advanced API controllers for appointments, blood requests, donations, and user management - Ready for collaborator enhancement
+[33m944bf8e[m feat: Add frontend public assets and gitignore configuration
+[33m14323d6[m feat: Implement frontend common components including charts, forms, navigation, and UI elements
+[33m7c7d7f8[m feat: Implement frontend dashboard, authentication, forms, and UI components
+[33m65d56a9[m feat: Implement frontend CRUD pages, tables, and state slices for basic entities
+[33m627d3a0[m feat: Implement frontend core components, layouts, styling, state management, and type definitions
+[33m3717d38[m feat: Setup React frontend with Vite, TypeScript, Tailwind CSS, and project configuration
+[33mbf93111[m feat: Implement basic CRUD controllers for cities, countries, levels, services, and specializations
