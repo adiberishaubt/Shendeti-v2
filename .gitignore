@@ -43,4 +43,4 @@ msbuild.err
 msbuild.wrn
 
 # Frontend files (managed by collaborator)
-reactfront/
+# reactfront/
