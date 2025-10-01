@@ -106,7 +106,8 @@ namespace Shendeti.Infrastructure.Migrations
                         name: "FK_Cities_Countries_CountryId",
                         column: x => x.CountryId,
                         principalTable: "Countries",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -125,7 +126,8 @@ namespace Shendeti.Infrastructure.Migrations
                         name: "FK_Services_Specializations_SpecializationId",
                         column: x => x.SpecializationId,
                         principalTable: "Specializations",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -163,7 +165,8 @@ namespace Shendeti.Infrastructure.Migrations
                         name: "FK_AspNetUsers_Cities_CityId",
                         column: x => x.CityId,
                         principalTable: "Cities",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_AspNetUsers_Levels_LevelId",
                         column: x => x.LevelId,
@@ -487,15 +490,15 @@ namespace Shendeti.Infrastructure.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "1d20c091-0d59-4932-b490-dd7f705c6d54", null, "Doctor", "DOCTOR" },
-                    { "91ab75e3-872a-4ecd-ad1a-8326f9b8153c", null, "Patient", "PATIENT" },
+                    { "040a1dc9-a3b3-4257-8f89-a02904e6f569", null, "Doctor", "DOCTOR" },
+                    { "10e968c5-5584-41c4-8e64-e3fe2c9fb5ae", null, "Patient", "PATIENT" },
                     { "ADMIN21451290fdjskn12389tr12", null, "Admin", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUsers",
                 columns: new[] { "Id", "AccessFailedCount", "BloodType", "CityId", "ConcurrencyStamp", "Email", "EmailConfirmed", "Gender", "GivesBlood", "LevelId", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "RefreshToken", "RefreshTokenExpires", "SecurityStamp", "TwoFactorEnabled", "UserName", "xp" },
-                values: new object[] { "123admin", 0, null, null, "1139feff-b3a0-4943-a705-02f3021f19e9", "granit@gmail.com", false, "Male", false, null, false, null, "GRANIT@GMAIL.COM", "GRANIT", "AQAAAAIAAYagAAAAEBeap9Mjp+uEaCxKoIHaHfAIIFecSAMCkpTrIK7dRQcJPgzvBVrSdeGNsAzzA1E/OQ==", null, false, null, null, "ab6bd822-1242-451d-9b1b-532e1cd2227b", false, "granit", 0 });
+                values: new object[] { "123admin", 0, 1, null, "a56cc639-d916-4d54-a38e-22f83d699b42", "adi@gmail.com", false, "Male", false, null, false, null, "ADI@GMAIL.COM", "ADI", "AQAAAAIAAYagAAAAEKp2t7tBYQaAj3T80NMQiWJUEBcqDNs5Ux/CLagcdwup2McRf7yh0UdBYApzC0iiVQ==", null, false, null, null, "54702f68-e6dc-4bc5-969d-8264fe6ca03e", false, "Adi", 0 });
 
             migrationBuilder.InsertData(
                 table: "Admins",

@@ -12,8 +12,8 @@ using Shendeti.Infrastructure.Data;
 namespace Shendeti.Infrastructure.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240421014507_gcc")]
-    partial class gcc
+    [Migration("20251001084302_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -84,13 +84,13 @@ namespace Shendeti.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "153a4f0f-f74f-45c2-b925-74749eedd1d5",
+                            Id = "040a1dc9-a3b3-4257-8f89-a02904e6f569",
                             Name = "Doctor",
                             NormalizedName = "DOCTOR"
                         },
                         new
                         {
-                            Id = "e57e12d3-6726-4b19-a48c-06ba07c2ae8a",
+                            Id = "10e968c5-5584-41c4-8e64-e3fe2c9fb5ae",
                             Name = "Patient",
                             NormalizedName = "PATIENT"
                         },
@@ -603,19 +603,20 @@ namespace Shendeti.Infrastructure.Migrations
                         {
                             Id = "123admin",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "e4872d6d-ceaf-4c58-9c9a-a232b91dfb37",
-                            Email = "granit@gmail.com",
+                            BloodType = 1,
+                            ConcurrencyStamp = "a56cc639-d916-4d54-a38e-22f83d699b42",
+                            Email = "adi@gmail.com",
                             EmailConfirmed = false,
                             Gender = "Male",
                             GivesBlood = false,
                             LockoutEnabled = false,
-                            NormalizedEmail = "GRANIT@GMAIL.COM",
-                            NormalizedUserName = "GRANIT",
-                            PasswordHash = "AQAAAAIAAYagAAAAEN5Vovhljj0mxd99ndVIzdcz6Q3MTujSG8ND7bSUNINO1ffDUuz7AB7OXrjClq0GiQ==",
+                            NormalizedEmail = "ADI@GMAIL.COM",
+                            NormalizedUserName = "ADI",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKp2t7tBYQaAj3T80NMQiWJUEBcqDNs5Ux/CLagcdwup2McRf7yh0UdBYApzC0iiVQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "54c5f437-03e8-4640-9675-954b723bd694",
+                            SecurityStamp = "54702f68-e6dc-4bc5-969d-8264fe6ca03e",
                             TwoFactorEnabled = false,
-                            UserName = "granit",
+                            UserName = "Adi",
                             xp = 0
                         });
                 });
@@ -752,7 +753,7 @@ namespace Shendeti.Infrastructure.Migrations
             modelBuilder.Entity("Shendeti.Infrastructure.Entities.City", b =>
                 {
                     b.HasOne("Shendeti.Infrastructure.Entities.Country", "Country")
-                        .WithMany()
+                        .WithMany("Cities")
                         .HasForeignKey("CountryId")
                         .OnDelete(DeleteBehavior.Cascade);
 
@@ -805,7 +806,8 @@ namespace Shendeti.Infrastructure.Migrations
                 {
                     b.HasOne("Shendeti.Infrastructure.Entities.Specialization", "Specialization")
                         .WithMany()
-                        .HasForeignKey("SpecializationId");
+                        .HasForeignKey("SpecializationId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.Navigation("Specialization");
                 });
@@ -825,7 +827,8 @@ namespace Shendeti.Infrastructure.Migrations
                 {
                     b.HasOne("Shendeti.Infrastructure.Entities.City", "City")
                         .WithMany()
-                        .HasForeignKey("CityId");
+                        .HasForeignKey("CityId")
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("Shendeti.Infrastructure.Entities.Level", "Level")
                         .WithMany()
@@ -834,6 +837,11 @@ namespace Shendeti.Infrastructure.Migrations
                     b.Navigation("City");
 
                     b.Navigation("Level");
+                });
+
+            modelBuilder.Entity("Shendeti.Infrastructure.Entities.Country", b =>
+                {
+                    b.Navigation("Cities");
                 });
 
             modelBuilder.Entity("Shendeti.Infrastructure.Entities.Doctor", b =>

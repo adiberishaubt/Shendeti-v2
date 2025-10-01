@@ -38,11 +38,11 @@ public class DataContext : IdentityDbContext<User>
         builder.Entity<User>().HasData(new User
         {
             Id = "123admin",
-            UserName = "granit",
-            NormalizedUserName = "GRANIT",
-            Email = "granit@gmail.com",
-            NormalizedEmail = "GRANIT@GMAIL.COM",
-            PasswordHash = passwordHasher.HashPassword(null, "Granit.bu2"),
+            UserName = "Adi",
+            NormalizedUserName = "ADI",
+            Email = "adi@gmail.com",
+            NormalizedEmail = "ADI@GMAIL.COM",
+            PasswordHash = passwordHasher.HashPassword(null, "Adi.berisha1"),
             GivesBlood = false,
             BloodType = BloodType.APositive,
             Gender = "Male"

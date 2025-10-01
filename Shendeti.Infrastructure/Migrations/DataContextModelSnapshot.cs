@@ -81,13 +81,13 @@ namespace Shendeti.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "deb50d7a-2b01-456d-b6bc-fdedaaf4e8be",
+                            Id = "040a1dc9-a3b3-4257-8f89-a02904e6f569",
                             Name = "Doctor",
                             NormalizedName = "DOCTOR"
                         },
                         new
                         {
-                            Id = "37b7389c-9cd1-4afb-b5f6-da534b90dfc3",
+                            Id = "10e968c5-5584-41c4-8e64-e3fe2c9fb5ae",
                             Name = "Patient",
                             NormalizedName = "PATIENT"
                         },
@@ -601,19 +601,19 @@ namespace Shendeti.Infrastructure.Migrations
                             Id = "123admin",
                             AccessFailedCount = 0,
                             BloodType = 1,
-                            ConcurrencyStamp = "3284ac9c-2d1b-4f75-a67c-687d6aeeb323",
-                            Email = "granit@gmail.com",
+                            ConcurrencyStamp = "a56cc639-d916-4d54-a38e-22f83d699b42",
+                            Email = "adi@gmail.com",
                             EmailConfirmed = false,
                             Gender = "Male",
                             GivesBlood = false,
                             LockoutEnabled = false,
-                            NormalizedEmail = "GRANIT@GMAIL.COM",
-                            NormalizedUserName = "GRANIT",
-                            PasswordHash = "AQAAAAIAAYagAAAAEMpb5wYrMYRH4aSRF1jUe6z1A++jaDyG8VF+xt0zUCKBIcJWTqOe/ORJhb8TXbNUYw==",
+                            NormalizedEmail = "ADI@GMAIL.COM",
+                            NormalizedUserName = "ADI",
+                            PasswordHash = "AQAAAAIAAYagAAAAEKp2t7tBYQaAj3T80NMQiWJUEBcqDNs5Ux/CLagcdwup2McRf7yh0UdBYApzC0iiVQ==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e6488b24-39b2-48e6-975c-0e8cb43bf2d3",
+                            SecurityStamp = "54702f68-e6dc-4bc5-969d-8264fe6ca03e",
                             TwoFactorEnabled = false,
-                            UserName = "granit",
+                            UserName = "Adi",
                             xp = 0
                         });
                 });
